@@ -1,0 +1,58 @@
+
+\documentclass{article}
+\usepackage{minted, xcolor, graphicx, caption, geometry}
+\usepackage{soul}
+\geometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=2.5cm,
+  bottom=3cm
+}
+\captionsetup{font=footnotesize}
+
+
+\begin {document}
+\begin{figure}[t]
+    \centering{\includegraphics[scale=0.5]{~/templates/latex/images/ulbLogo.png}}
+	\label{fig:ulbLogo}
+\end{figure}
+\author {Mickael Kovel\\000396950}
+\date{\today}
+\title{INFO-F514 \\ Protocols, cryptanalysis and mathematical cryptology \\ Plan}
+\author{Mickael Kovel, Dan Adewuyi, Djonfang Tchuangue Vitaly, Peetroons Simon, Preda Patrick}
+\maketitle
+\newpage
+
+
+\section{\label{sec:subj}Subject}
+Nowadays, the security of our data is a major concern. With the rise of quantum computers,
+the security of our data is at risk. We need to find new ways to encrypt our data.
+Moreover, we need to be able to perform operations on encrypted data. This is where
+homomorphic encryption comes in.
+As seen in the course, lattice-based encryption is a good candidate homomorphic encryption,
+and it turns out that it is also a good candidate for post-quantum encryption.
+In this project, we will study lattice-based encryption and its applications.
+
+\section{\label{sec:Plan}Plan}
+We plan to study : 
+\begin{itemize}
+    \item Why do we need post quantum and homomorphic encryption ? (Mickael)
+    \item What is lattice scheme encryption ? (Patrick)
+    \item Why is it a good candidate for post quantum encryption and homomorphic encryption ? (Mickael)
+    \item How does it work ? (Patrick)
+    \item What applications can we find for this encryption ? (Simon)
+      \item Implement some examples of lattice scheme encryption to compare with the 
+        results of the paper.(Dan)
+\end{itemize}
+
+\section{Sources}
+
+\begin{itemize}
+    \item Post-Quantum Lattice-Based Cryptography Implementations: A Survey\cite{10.1145/3292548}
+    \item A Survey on Homomorphic Encryption Schemes: Theory and Implementation\cite{10.1145/3214303}
+\end{itemize}
+
+\bibliographystyle{unsrt}
+\bibliography{bibliography}
+
+\end {document}
